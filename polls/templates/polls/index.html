@@ -1,10 +1,62 @@
-{% if latest_question_list %}
-    <ul>
-    {% for question in latest_question_list %}
-        <li><a href="/polls/{{ question.id }}/">{{
- question.question_text }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No polls are available.</p>
-{% endif %}
+CTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelpSaude+</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+        body
+{
+    background-color: #b8dac2;
+    font: normal 15pt arial;
+    color: white;
+    text-align: center;
+}
+
+section
+{
+    background-color: white;
+   border-radius: 10px;
+   color: black;
+   padding: 15px;
+   width: 500px;
+   margin: auto;
+   text-align: center;
+   box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.363);
+}
+
+h1
+{
+    font-family: 'Satisfy', cursive;
+    font-size: 35pt
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HelpSaude+</h1>
+    </header>
+
+    <section>
+
+        <div id="mensagem">
+            
+        </div>
+        
+        <div id="espaco">
+          <iframe
+          width="500"
+          height="550"
+          style="border:0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkU__oirZx_Ji2ZyvmNmMGGAlmGekHU7E
+            &q=Space+Needle,Seattle+WA">
+        </iframe>
+        </div>
+    </section>
+</body>
+</html>
