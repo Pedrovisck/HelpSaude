@@ -1,4 +1,3 @@
-CTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -38,7 +37,17 @@ h1
     <header>
         <h1>HelpSaude+</h1>
     </header>
-
+    <label for="">Selecione uma unidade:</label>
+    <select id="estado">
+        <option value="AC">Hospitais</option>
+        <option value="AL">UPAs</option>
+        <option value="AP">Farmácias</option>
+    </select>
+    <script>
+        $(document).ready(function() {
+            $('#estado').select2();
+        });
+    </script>
     <section>
 
         <div id="mensagem">
@@ -48,10 +57,10 @@ h1
         <div id="espaco">
             <iframe 
             width="500" 
-            height="550" 
+            height="520" 
             style="border:0" 
             loading="lazy" allowfullscreen
-            src="https://www.google.com/maps/embed/v1/search?q=Hospital&key=AIzaSyCkU__oirZx_Ji2ZyvmNmMGGAlmGekHU7E"></iframe>
+            src="https://www.google.com/maps/embed/v1/search?q=Hospital+Fortaleza,CE&key=AIzaSyCkU__oirZx_Ji2ZyvmNmMGGAlmGekHU7E"></iframe>
         </div>
     </section>
 </body>
